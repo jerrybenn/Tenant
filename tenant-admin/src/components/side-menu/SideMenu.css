@@ -1,0 +1,36 @@
+.sideMenuContainer {
+  width: 240px;
+  min-height: calc(100vh - 56px); /* below top navbar (approx height) */
+  background-color: #0d1018;
+}
+
+.sideMenuNav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.sideMenuItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.sideMenuItem:hover {
+  background-color: #111827;
+}
+
+.sideMenuItem.active {
+  background-color: #3f3f46;
+  color: #ffffff;
+}
+
+.sideMenuItem span {
+  font-size: 14px;
+}

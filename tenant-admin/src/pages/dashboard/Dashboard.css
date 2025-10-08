@@ -5,4 +5,5 @@
 
 .dashboardContent {
   flex: 1;
+  padding: 24px; /* move page padding here so SideMenu touches the left edge */
 }
