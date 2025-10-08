@@ -2,6 +2,7 @@ import React from 'react';
 import './Units.css';
 import SideMenu from '../../components/side-menu/SideMenu';
 import PageHeader from '../../components/page-header/PageHeader';
+import UnitsTable from '../../components/units-table/UnitsTable';
 
 export default function Units() {
 	return (
@@ -9,8 +10,7 @@ export default function Units() {
             <SideMenu />
             <div className="unitsContent">
                 <PageHeader />
-                <h1 className="unitsTitle">Units</h1>
-			    <p className="unitsSubtitle">Manage and view property units.</p>
+                <UnitsTable />
             </div>
 			
 		</div>

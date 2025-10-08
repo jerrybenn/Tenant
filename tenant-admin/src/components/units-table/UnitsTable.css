@@ -1,0 +1,128 @@
+.unitsTableContainer {
+  width: 100%;
+}
+
+.tableCard {
+  background: #0b0f14;
+  border: 1px solid #1f2430;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tableToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #1f2430;
+}
+
+.searchInput {
+  width: 280px;
+  background: #0a0d12;
+  border: 1px solid #1f2430;
+  color: #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.filterSelect {
+  background: #0a0d12;
+  color: #e5e7eb;
+  border: 1px solid #1f2430;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.tableHeaderRow,
+.tableDataRow {
+  display: grid;
+  grid-template-columns: 36px 80px 140px 1.5fr 1fr 120px 120px 48px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.tableHeaderRow {
+  color: #9ca3af;
+  font-size: 12px;
+  background: #0a0d12;
+}
+.tableDataRow {
+  color: #e5e7eb;
+  border-top: 1px solid #1f2430;
+}
+
+.tableBody {
+  max-height: 420px;
+  overflow: auto;
+}
+
+.th,
+.td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.checkboxCol {
+  display: flex;
+  justify-content: center;
+}
+.actionsCol {
+  text-align: center;
+  color: #9ca3af;
+}
+
+.statusBadge {
+  padding: 4px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+}
+.statusBadge.online {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+.statusBadge.offline {
+  background: rgba(148, 163, 184, 0.15);
+  color: #94a3b8;
+}
+
+.tableFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-top: 1px solid #1f2430;
+  color: #9ca3af;
+}
+.pager {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pagerBtn {
+  background: #0a0d12;
+  border: 1px solid #1f2430;
+  color: #e5e7eb;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.pagerBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.pageInfo {
+  color: #94a3b8;
+}
+.pageSize {
+  background: #0a0d12;
+  color: #e5e7eb;
+  border: 1px solid #1f2430;
+  border-radius: 8px;
+  padding: 6px;
+}
