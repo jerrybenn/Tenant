@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 16px;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .navTitle {
   color: #e5e7eb;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .pageHeaderRight {

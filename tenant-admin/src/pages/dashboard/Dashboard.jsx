@@ -2,6 +2,7 @@ import React from 'react';
 import './Dashboard.css';
 import SideMenu from '../../components/side-menu/SideMenu';
 import PageHeader from '../../components/page-header/PageHeader';
+import HeroRow from '../../components/hero-row/HeroRow';
 
 export default function Dashboard() {
 	return (
@@ -9,8 +10,8 @@ export default function Dashboard() {
 			<SideMenu />
 			<div className="dashboardContent">
 				<PageHeader />
-				<h1>Tenant Dashboard</h1>
-				<p>Welcome to your admin dashboard. Use the navigation to explore.</p>
+				<div className="sectionTitle">Overview</div>
+				<HeroRow />
 			</div>
 		</div>
 	);

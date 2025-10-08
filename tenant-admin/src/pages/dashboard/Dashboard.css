@@ -7,5 +7,15 @@
 
 .dashboardContent {
   flex: 1;
-  padding: 24px; /* move page padding here so SideMenu touches the left edge */
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* move page padding here so SideMenu touches the left edge */
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
