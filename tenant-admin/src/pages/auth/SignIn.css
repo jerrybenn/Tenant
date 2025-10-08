@@ -1,0 +1,110 @@
+.signInPageContainer {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+      120% 120% at 50% -20%,
+      rgba(37, 99, 235, 0.12),
+      transparent 40%
+    ),
+    #05070b;
+}
+
+.signInCard {
+  width: 480px;
+  background: #0b0f14;
+  border: 1px solid #1f2430;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color: #e5e7eb;
+}
+
+.signInHeader {
+  margin-bottom: 16px;
+}
+.signInBrand {
+  color: #60a5fa;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.signInTitle {
+  margin: 0;
+  font-size: 32px;
+  color: #f3f4f6;
+}
+
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.signInLabel {
+  font-size: 12px;
+  color: #9ca3af;
+}
+.signInInput {
+  background: #0a0d12;
+  border: 1px solid #22242a;
+  border-radius: 10px;
+  color: #e5e7eb;
+  padding: 12px;
+}
+
+.signInRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rememberMe {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #9ca3af;
+}
+
+.signInButton {
+  background: #e5e7eb;
+  color: #0a0d12;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #22242a;
+  cursor: pointer;
+}
+
+.ghostLink {
+  background: transparent;
+  border: 0;
+  color: #9ca3af;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #6b7280;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #1f2430;
+}
+
+.providerButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+  background: #0a0d12;
+  border: 1px solid #22242a;
+  color: #e5e7eb;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.unitsPageContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100svh;
+  background-color: #05070b;
+  color: #e5e7eb;
+}
+
+.unitsContent {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.unitsTitle {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+.unitsSubtitle {
+  font-size: 14px;
+  color: #94a3b8;
+}

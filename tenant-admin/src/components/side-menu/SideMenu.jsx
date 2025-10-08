@@ -12,7 +12,7 @@ import './SideMenu.css';
 
 const menuItems = [
   { label: 'Home', path: '/', icon: <HomeRoundedIcon sx={{ fontSize: 18 }} />, end: true },
-  { label: 'Requests', path: '/requests', icon: <RequestPageRoundedIcon sx={{ fontSize: 18 }} /> },
+  { label: 'Units', path: '/units', icon: <RequestPageRoundedIcon sx={{ fontSize: 18 }} /> },
   { label: 'Work Orders', path: '/work-orders', icon: <HandymanRoundedIcon sx={{ fontSize: 18 }} /> },
   { label: 'Tenants', path: '/tenants', icon: <PeopleAltRoundedIcon sx={{ fontSize: 18 }} /> },
   { label: 'Vendors', path: '/vendors', icon: <StorefrontRoundedIcon sx={{ fontSize: 18 }} /> },

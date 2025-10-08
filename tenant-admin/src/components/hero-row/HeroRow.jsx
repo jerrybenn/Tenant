@@ -39,7 +39,7 @@ export default function HeroRow() {
 		</div>
         <div className="heroRowCard">
 			<div className="heroRowCardTitle">
-				<span>Requests</span>
+				<span>New Leases</span>
 			</div>
 			<div className="heroCardData">
 				<div className="heroCardLargeNumber">
@@ -56,7 +56,7 @@ export default function HeroRow() {
 		</div>
         <div className="heroRowCard">
 			<div className="heroRowCardTitle">
-				<span>New Leases</span>
+				<span>Vacancy</span>
 			</div>
 			<div className="heroCardData">
 				<div className="heroCardLargeNumber">
@@ -73,7 +73,7 @@ export default function HeroRow() {
 		</div>
         <div className="heroRowCard">
 			<div className="heroRowCardTitle">
-				<span>Revenue</span>
+				<span>Properties </span>
 			</div>
 			<div className="heroCardData">
 				<div className="heroCardLargeNumber">
