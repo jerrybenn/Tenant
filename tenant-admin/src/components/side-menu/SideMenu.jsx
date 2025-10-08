@@ -1,32 +1,42 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import QueryStatsRoundedIcon from '@mui/icons-material/QueryStatsRounded';
+import RequestPageRoundedIcon from '@mui/icons-material/RequestPageRounded';
+import HandymanRoundedIcon from '@mui/icons-material/HandymanRounded';
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
-import ChecklistRoundedIcon from '@mui/icons-material/ChecklistRounded';
+import StorefrontRoundedIcon from '@mui/icons-material/StorefrontRounded';
+import CalendarMonthRoundedIcon from '@mui/icons-material/CalendarMonthRounded';
+import AssessmentRoundedIcon from '@mui/icons-material/AssessmentRounded';
+import ChatRoundedIcon from '@mui/icons-material/ChatRounded';
 import './SideMenu.css';
 
+const menuItems = [
+  { label: 'Home', path: '/', icon: <HomeRoundedIcon sx={{ fontSize: 18 }} />, end: true },
+  { label: 'Requests', path: '/requests', icon: <RequestPageRoundedIcon sx={{ fontSize: 18 }} /> },
+  { label: 'Work Orders', path: '/work-orders', icon: <HandymanRoundedIcon sx={{ fontSize: 18 }} /> },
+  { label: 'Tenants', path: '/tenants', icon: <PeopleAltRoundedIcon sx={{ fontSize: 18 }} /> },
+  { label: 'Vendors', path: '/vendors', icon: <StorefrontRoundedIcon sx={{ fontSize: 18 }} /> },
+  { label: 'Calendar', path: '/calendar', icon: <CalendarMonthRoundedIcon sx={{ fontSize: 18 }} /> },
+  { label: 'Reports', path: '/reports', icon: <AssessmentRoundedIcon sx={{ fontSize: 18 }} /> },
+  { label: 'Messages', path: '/messages', icon: <ChatRoundedIcon sx={{ fontSize: 18 }} /> },
+];
+
 export default function SideMenu() {
-	return (
-		<aside className="sideMenuContainer">
-			<nav className="sideMenuNav">
-				<NavLink to="/" end className={({ isActive }) => `sideMenuItem ${isActive ? 'active' : ''}`}>
-					<HomeRoundedIcon sx={{ fontSize: 18 }}  />
-					<span>Home</span>
-				</NavLink>
-				<NavLink to="/analytics" className={({ isActive }) => `sideMenuItem ${isActive ? 'active' : ''}`}>
-					<QueryStatsRoundedIcon sx={{ fontSize: 18 }} />
-					<span>Analytics</span>
-				</NavLink>
-				<NavLink to="/clients" className={({ isActive }) => `sideMenuItem ${isActive ? 'active' : ''}`}>
-					<PeopleAltRoundedIcon sx={{ fontSize: 18 }}  />
-					<span>Clients</span>
-				</NavLink>
-				<NavLink to="/tasks" className={({ isActive }) => `sideMenuItem ${isActive ? 'active' : ''}`}>
-					<ChecklistRoundedIcon sx={{ fontSize: 18 }}  />
-					<span>Tasks</span>
-				</NavLink>
-			</nav>
-		</aside>
-	);
+  return (
+    <aside className="sideMenuContainer">
+      <nav className="sideMenuNav">
+        {menuItems.map(({ label, path, icon, end }) => (
+          <NavLink
+            key={path}
+            to={path}
+            end={end}
+            className={({ isActive }) => `sideMenuItem ${isActive ? 'active' : ''}`}
+          >
+            {icon}
+            <span>{label}</span>
+          </NavLink>
+        ))}
+      </nav>
+    </aside>
+  );
 }

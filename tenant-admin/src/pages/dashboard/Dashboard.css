@@ -1,6 +1,8 @@
 .dashboardContainer {
   display: flex;
   flex-direction: row;
+  height: 100svh;
+  background-color: #05070b;
 }
 
 .dashboardContent {

@@ -1,6 +1,8 @@
 .sideMenuContainer {
   width: 240px;
-  min-height: calc(100vh - 56px); /* below top navbar (approx height) */
+  height: 100svh;
+  position: sticky;
+  top: 0; /* no navbar, stick to top */
   background-color: #0d1018;
 }
 

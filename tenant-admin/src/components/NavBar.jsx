@@ -12,7 +12,8 @@ export default function NavBar() {
 			position: 'sticky',
 			top: 0,
 			background: '#fff',
-			zIndex: 10
+			zIndex: 10,
+			height: 'var(--nav-h)'
 		}}>
 			<Link to="/" style={{ fontWeight: 700, fontSize: 18, textDecoration: 'none', color: '#111827' }}>
 				Tenant Admin

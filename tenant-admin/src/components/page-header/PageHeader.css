@@ -1,0 +1,44 @@
+.pageHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  color: #ffffff;
+}
+
+.navTitle {
+  color: #e5e7eb;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.pageHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerPill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #2b2f36;
+  background: #0d1018;
+  color: #e5e7eb;
+  border-radius: 12px;
+}
+.notifButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  border-radius: 10px;
+  border: 1px solid #2b2f36;
+  background: #0d1018;
+ 
+}
+.headerPill span {
+  font-size: 14px;
+}
