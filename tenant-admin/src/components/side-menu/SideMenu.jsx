@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import RequestPageRoundedIcon from '@mui/icons-material/RequestPageRounded';
 import HandymanRoundedIcon from '@mui/icons-material/HandymanRounded';
@@ -24,6 +24,9 @@ const menuItems = [
 export default function SideMenu() {
   return (
     <aside className="sideMenuContainer">
+      <div className="sideMenuBrand">
+        <Link to="/" className="sideMenuBrandLink">Tenant</Link>
+      </div>
       <nav className="sideMenuNav">
         {menuItems.map(({ label, path, icon, end }) => (
           <NavLink

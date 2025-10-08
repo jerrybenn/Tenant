@@ -8,6 +8,17 @@
   overflow: hidden; /* prevent children from overflowing right edge */
 }
 
+.sideMenuBrand {
+  padding: 16px 12px 8px 12px;
+}
+
+.sideMenuBrandLink {
+  font-weight: 800;
+  font-size: 20px;
+  color: #60a5fa;
+  text-decoration: none;
+}
+
 .sideMenuNav {
   display: flex;
   flex-direction: column;
